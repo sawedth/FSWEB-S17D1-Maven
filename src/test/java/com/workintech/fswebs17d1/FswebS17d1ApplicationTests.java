@@ -117,7 +117,7 @@ class FswebS17d1ApplicationTests {
 		Animal animal = new Animal(expectedId, expectedName);
 
 		// Assert
-		assertEquals(expectedId, animal.getId(), "The ID should match the expected value.");
+		assertEquals(expectedId, Math.toIntExact(animal.getId()), "The ID should match the expected value.");
 		assertEquals(expectedName, animal.getName(), "The name should match the expected value.");
 	}
 
